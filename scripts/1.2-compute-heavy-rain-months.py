@@ -71,8 +71,8 @@ def main():
 
     df = pd.DataFrame(all_records)
 
-    RAIN_THRESHOLD_MM = np.percentile(df['mean_rain'], 75)
-    print(f"✅ Data-derived rainfall threshold (75th percentile): {RAIN_THRESHOLD_MM:.2f} mm")
+    RAIN_THRESHOLD_MM = np.percentile(df['mean_rain'], 95)
+    print(f"✅ Data-derived rainfall threshold (95th percentile): {RAIN_THRESHOLD_MM:.2f} mm")
 
 
     # # Count heavy-rainfall months per district
