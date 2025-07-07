@@ -1,0 +1,28 @@
+# General
+tqdm
+shutil
+
+# Data science & analysis
+numpy
+pandas
+xarray
+
+# Geospatial
+geopandas
+rasterio
+rioxarray
+shapely
+fiona
+
+# Downloading and APIs
+cdsapi
+requests
+
+# WhiteboxTools (for HAND depression breaching, CLI tool required separately, but can install Python wrapper if used)
+whiteboxgui
+
+# For handling NetCDF (if not included with xarray/rioxarray)
+netCDF4
+
+# For system/file utilities (should be standard, included with Python)
+# os, glob, zipfile
