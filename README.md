@@ -2,7 +2,7 @@
 
 This repository contains an automated pipeline for climate hazard mapping at the district level in Bangladesh. The workflow includes downloading, processing, and integrating multiple open-source environmental datasets to generate reproducible flood and heat hazard scores for all 64 districts.
 
-**All data downloads and processing are fully automated—the only user input required is to provide the Area of Interest (AOI) shapefile. Once the AOI is supplied, the pipeline runs end-to-end with no manual intervention.**
+**All data downloads and processing are fully automated—the only user input required is to provide the Area of Interest (AOI) shapefile with an attribute named "name" (string, 100). Once the AOI is supplied, the pipeline runs end-to-end with no manual intervention.**
 
 **All hazard scores are calculated on a *****relative***** basis:**\
 Each score (rainfall, flood, heat, etc.) is normalised (min-max or percentile) across all districts, so hazard values represent *relative risk compared to other districts in the same run for data from  2020–2024*. These are *not* absolute risk values.
