@@ -11,10 +11,10 @@ Each score (rainfall, flood, heat, etc.) is normalised (min-max or percentile) a
 
 ## Methodology Summary
 
-- **Rainfall Hazard**: For each district, the number of months with rainfall above the 75th percentile (across all districts/years) is counted. Scores are then normalised (min-max) across districts.
+- **Rainfall Hazard**: For each district, the number of months with rainfall above the 95th percentile (across all districts/years) is counted. Scores are then normalised (min-max) across districts.
 - **HAND (Height Above Nearest Drainage) Hazard**: The proportion of each district’s area with HAND below a set threshold is used, then normalised (min-max) across districts. This represents low-elevation, flood-prone terrain.
 - **Flood Hazard (Combined)**: Rainfall hazard and HAND hazard are combined using a weighted average (no additional scaling is applied at this stage).
-- **Heat Hazard**: For each district, the number of days with daily max temperature above the 75th percentile is counted, then normalised (min-max) across districts.
+- **Heat Hazard**: For each district, the number of days with daily max temperature above the 95th percentile is counted, then normalised (min-max) across districts.
 - **Combined Hazard**: The flood and heat hazard scores are simply summed (not weighted) to produce the final combined hazard score. This total is then normalised across districts for comparison.
 
 > *All outputs represent relative hazard within the AOI—higher scores mean higher hazard compared to other districts in your analysis, not compared to a fixed physical scale.*
