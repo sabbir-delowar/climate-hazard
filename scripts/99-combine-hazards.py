@@ -1,11 +1,4 @@
 def main():
-    #!/usr/bin/env python
-    # coding: utf-8
-
-    # # Import Libraries
-
-    # In[1]:
-
 
     import pandas as pd
     import geopandas as gpd
@@ -14,9 +7,6 @@ def main():
 
 
     # # Define Paths
-
-    # In[3]:
-
 
     district_shp = "data/aoi/aoi-multipoly.shp"
 
@@ -32,9 +22,6 @@ def main():
 
     # # Load and merge files
 
-    # In[4]:
-
-
     gdf = gpd.read_file(district_shp)
     gdf = gdf[['name', 'geometry']].copy()
     gdf = gdf.rename(columns={'name': 'district'})
@@ -48,26 +35,29 @@ def main():
 
     # # Total hazard score
 
-    # In[5]:
-
-
     hazard_df['total_hazard'] = (
         hazard_df['combined_flood_hazard'] + 
         hazard_df['heat_hazard']
     )
+    
+    hazard_df = hazard_df.rename(columns={
+    'rainfall_hazard': 'rain_h',
+    'hand_hazard': 'hand_h',
+    'combined_fflood_hazard': 'flood_h',
+    'heat_hazard': 'heat_h',
+    'total_hazard': 'total_h'
+    })
+
 
     # Optionally normalize 0–1
-    max_total = hazard_df['total_hazard'].max()
-    hazard_df['total_hazard_normalized'] = hazard_df['total_hazard'] / max_total
+    max_total = hazard_df['total_h'].max()
+    hazard_df['total_h'] = hazard_df['total_h'] / max_total
+    cols = ['district', 'rain_h', 'hand_h', 'flood_h', 'heat_h', 'total_h', 'geometry']
+    hazard_df = hazard_df[cols]
 
     hazard_df_nogeo = hazard_df.drop(columns='geometry')
     hazard_df_nogeo.to_csv(output_csv, index=False)
     hazard_df.to_file(output_shp)
-
-
-    # In[ ]:
-
-
 
 
 if __name__ == "__main__":

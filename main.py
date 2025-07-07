@@ -7,7 +7,7 @@ scripts = [
     "scripts/2.4-classify-flood-prone.py",
     "scripts/3.1-combine-rainfall-hand-hazard.py",
     "scripts/4.2-compute-heatwave-days.py",
-    "scripts/5-combine-hazards.py"
+    "scripts/99-combine-hazards.py"
 ]
 
 for script in scripts:
