@@ -1,10 +1,10 @@
+import os
+import geopandas as gpd
+import requests
+import zipfile
+from tqdm import tqdm
+
 def main():
-    
-    import os
-    import geopandas as gpd
-    import requests
-    import zipfile
-    from tqdm import tqdm
 
     # # Define Paths
 

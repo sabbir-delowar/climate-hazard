@@ -1,19 +1,15 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+import os
+import numpy as np
+import rasterio
+import rioxarray
+import geopandas as gpd
+import pandas as pd
+import matplotlib.pyplot as plt
+
 def main():
-    #!/usr/bin/env python
-    # coding: utf-8
-
-    # # Import Libraries
-
-    # In[2]:
-
-
-    import os
-    import numpy as np
-    import rasterio
-    import rioxarray
-    import geopandas as gpd
-    import pandas as pd
-    import matplotlib.pyplot as plt
 
 
 

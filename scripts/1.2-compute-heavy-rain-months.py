@@ -1,14 +1,14 @@
-def main():
+import os
+import xarray as xr
+import rioxarray
+import geopandas as gpd
+import rasterio
+import rasterio.mask
+import pandas as pd
+import numpy as np
+from tqdm import tqdm
 
-    import os
-    import xarray as xr
-    import rioxarray
-    import geopandas as gpd
-    import rasterio
-    import rasterio.mask
-    import pandas as pd
-    import numpy as np
-    from tqdm import tqdm
+def main():
 
     # # Define Paths
 

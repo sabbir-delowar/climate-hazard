@@ -1,16 +1,16 @@
-def main():
+import shutil
+import os
+import glob
+import geopandas as gpd
+import rasterio
+from rasterio.merge import merge
+from rasterio.mask import mask
+from rasterio.warp import calculate_default_transform, reproject, Resampling
+import numpy as np
+import matplotlib.pyplot as plt
+from tqdm import tqdm
 
-    import shutil
-    import os
-    import glob
-    import geopandas as gpd
-    import rasterio
-    from rasterio.merge import merge
-    from rasterio.mask import mask
-    from rasterio.warp import calculate_default_transform, reproject, Resampling
-    import numpy as np
-    import matplotlib.pyplot as plt
-    from tqdm import tqdm
+def main():
 
 
 

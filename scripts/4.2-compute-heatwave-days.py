@@ -1,13 +1,13 @@
+import os
+import xarray as xr
+import geopandas as gpd
+import rasterio
+import rasterio.mask
+import numpy as np
+import pandas as pd
+from tqdm import tqdm
+
 def main():
-    
-    import os
-    import xarray as xr
-    import geopandas as gpd
-    import rasterio
-    import rasterio.mask
-    import numpy as np
-    import pandas as pd
-    from tqdm import tqdm
 
 
 
