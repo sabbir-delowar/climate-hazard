@@ -49,8 +49,8 @@ climate-hazard/
 │   ├── aoi/                # Bangladesh district shapefiles (user AOI goes here)
 │   └──  interim/           # Intermediate data
 │         ├── hand/         # Downloaded and processed hand data
-│         ├── heat/     ``` # Downloaded and processed heat data
-│         └── febdem/       # Downloaded and processed DEM tiles
+│         ├── heat/         # Downloaded and processed heat data
+│         └── fabdem/       # Downloaded and processed DEM tiles
 ├── scripts/                # All pipeline Python scripts
 ├── results/                # Output CSVs, shapefiles, hazard maps
 ├── main.py                 # Pipeline runner
