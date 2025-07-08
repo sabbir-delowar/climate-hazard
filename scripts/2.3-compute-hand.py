@@ -1,9 +1,9 @@
+import os
+from whitebox.whitebox_tools import WhiteboxTools
+import rasterio
+import matplotlib.pyplot as plt
+
 def main():
-    
-    import os
-    from whitebox.whitebox_tools import WhiteboxTools
-    import rasterio
-    import matplotlib.pyplot as plt
 
     # # Define Paths
 

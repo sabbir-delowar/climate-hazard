@@ -23,7 +23,9 @@ Each score (rainfall, flood, heat, etc.) is normalised (min-max or percentile) a
 
 ## Project Overview
 
-- Fully automated, script-based workflow (run with `python main.py`)
+- Fully automated, script-based workflow (run with `python main.py`).
+  Each script imports its dependencies at the top level so they can be
+  executed individually or through the runner using `runpy`.
 - Download and process:
   - **ERA5 Rainfall** (monthly means, 2020–2024)
   - **ESA FABDEM DEM** (for HAND/flood risk)
@@ -93,7 +95,7 @@ Run the entire pipeline with:
 python main.py
 ```
 
-This will execute all scripts in order and generate results in `/results`.
+This will execute all scripts in order using `runpy` and generate results in `/results`.
 
 Or run scripts individually, e.g.:
 

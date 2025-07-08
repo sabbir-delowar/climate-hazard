@@ -1,8 +1,8 @@
+import os
+import geopandas as gpd
+import cdsapi
+
 def main():
-    
-    import os
-    import geopandas as gpd
-    import cdsapi
 
 
     # AOI shapefile path

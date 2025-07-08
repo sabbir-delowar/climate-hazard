@@ -1,4 +1,4 @@
-import subprocess
+import runpy
 
 scripts = [
     "scripts/1.2-compute-heavy-rain-months.py",
@@ -12,6 +12,6 @@ scripts = [
 
 for script in scripts:
     print(f"\n=== Running: {script} ===")
-    subprocess.run(["python", script], check=True)
+    runpy.run_path(script, run_name="__main__")
 
 print("\n✅ All steps complete!")

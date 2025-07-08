@@ -1,20 +1,16 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+import cdsapi
+import xarray as xr
+import rioxarray
+import geopandas as gpd
+import matplotlib.pyplot as plt
+import pandas as pd
+import numpy as np
+import os
+
 def main():
-    #!/usr/bin/env python
-    # coding: utf-8
-
-    # # Import Libraries
-
-    # In[1]:
-
-
-    import cdsapi
-    import xarray as xr
-    import rioxarray
-    import geopandas as gpd
-    import matplotlib.pyplot as plt
-    import pandas as pd
-    import numpy as np
-    import os
 
 
 

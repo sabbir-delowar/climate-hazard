@@ -1,7 +1,8 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+import os
+
 def main():
-    import pandas as pd
-    import matplotlib.pyplot as plt
-    import os
 
     # # Define Paths
 
