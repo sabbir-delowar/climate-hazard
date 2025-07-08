@@ -41,11 +41,11 @@ def main():
     )
     
     hazard_df = hazard_df.rename(columns={
-    'rainfall_hazard': 'rain_h',
-    'hand_hazard': 'hand_h',
-    'combined_fflood_hazard': 'flood_h',
-    'heat_hazard': 'heat_h',
-    'total_hazard': 'total_h'
+        'rainfall_hazard': 'rain_h',
+        'hand_hazard': 'hand_h',
+        'combined_flood_hazard': 'flood_h',
+        'heat_hazard': 'heat_h',
+        'total_hazard': 'total_h'
     })
 
 
