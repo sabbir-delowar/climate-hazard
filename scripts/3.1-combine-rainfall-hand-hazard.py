@@ -33,5 +33,4 @@ def main():
 
     combined_df.to_csv(output_csv, index=False)
 
-if __name__ == "__main__":
-    main()
+if __name__ == "__main__":    main()
