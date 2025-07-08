@@ -72,7 +72,7 @@ climate-hazard/
 
 ```bash
 # Clone the repository
-$ git clone https://github.com/your-username/climate-hazard.git
+$ git clone https://github.com//sabbir-delowar/climate-hazard.git
 $ cd climate-hazard
 
 # Install dependencies
